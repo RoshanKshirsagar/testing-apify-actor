@@ -1,1 +1,11 @@
-INPUT_SCHEMA.json)
+{
+  "title": "Random Row Generator",
+  "type": "object",
+  "properties": {
+    "rows": {
+      "title": "Number of rows",
+      "type": "integer",
+      "default": 5
+    }
+  }
+}
