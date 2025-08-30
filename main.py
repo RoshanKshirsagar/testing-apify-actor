@@ -1,7 +1,7 @@
 import random
 import string
 from apify import Actor
-
+import asyncio
 
 def random_string(length=8):
     """Generate a random string of given length."""
@@ -32,3 +32,6 @@ async def main():
             await Actor.push_data(row)
 
         Actor.log.info("✅ Finished generating random rows!")
+
+if __name__ == "__main__":
+    asyncio.run(main())
